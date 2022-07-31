@@ -13,7 +13,12 @@ you can build your environment follow [this](https://github.com/rosinality/style
 
 ## how to run
 ### train
-download pretrain weights
+download pretrain weights<br>
+    ```shell
+    cd utils
+    bash download_weight.sh
+    ```
+follow [osinality/stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch) and put 550000.pt in pretrain_models
 #### CCN
 1. prepare the style pictures and align them<br>
     the image path is like this<br>
