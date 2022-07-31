@@ -19,7 +19,7 @@ download pretrain weights<br>
 cd utils
 bash download_weight.sh
 ```
-follow [osinality/stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch) and put 550000.pt in pretrain_models
+follow [rosinality/stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch) and put 550000.pt in pretrain_models
 #### CCN
 1. prepare the style pictures and align them<br>
     the image path is like this<br>
