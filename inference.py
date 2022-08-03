@@ -52,7 +52,7 @@ if __name__ == "__main__":
     n_h,n_w = img_h // 8 * 8,img_w // 8 * 8
     img = cv2.resize(img,(n_w,n_h))
 
-    oup = model.run(img)[...,::-1]
+    oup = model.run(img)
     cv2.imwrite('output.png',oup)
      
 
