@@ -126,7 +126,7 @@ def guided_filter(x, y, r, eps=1e-2):
 # refer to https://github.com/SystemErrorWang/White-box-Cartoonization
 def color_shift(image, mode='uniform'):
     device = image.device
-    b1, g1, r1 = torch.split(image, 1, dim=1)
+    r1, b1, g1 = torch.split(image, 1, dim=1)
    
     if mode == 'normal':
         b_weight = torch.normal(mean=0.114, std=0.1,size=[1]).to(device)
